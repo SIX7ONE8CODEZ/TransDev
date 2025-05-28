@@ -1,0 +1,17 @@
+# Logs
+logs
+*.log
+xvba_debug.log*
+
+# Editor directories and files
+.vscode
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables
+.env
