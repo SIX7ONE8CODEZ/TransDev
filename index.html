@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Training Schedule - Login</title>
-    <link rel="stylesheet" href="css/styles.css">    <!-- All styles now in styles.css -->
+    <!-- Update CSS link -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Training Schedule</h1>
-    </header>
-    
     <div class="login-container">
         <h2>Login</h2>
         <div id="login-error" class="error-message">Invalid username or password</div>
-        <form class="login-form" id="login-form">
+        <form id="login-form">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
@@ -22,23 +19,21 @@
             <div class="form-group">
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
-            </div>            <button type="submit" class="login-btn">Login</button>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
         </form>
-        <p class="login-info">
+        <div class="login-info">
             Login as an admin to edit the schedule or as a guest to view it.
-        </p>
+        </div>
     </div>
-      
     <footer>
-        <p>&copy; 2025 SIZ7ONE8 CODEZ | Email: SIX7ONE8@ICLOUD.COM | Cell: 303-995-9851</p>
+        <p>&copy; 2025 SIX7ONE8 CODEZ | Email: SIX7ONE8@ICLOUD.COM | Cell: 303-995-9851</p>
     </footer>
-    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Login credentials
             const users = {
                 admin: {
-                    password: 'admin123',
+                    password: 'admin',
                     role: 'admin'
                 },
                 guest: {
