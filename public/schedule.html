@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Schedule Spreadsheet</title>
+    <!-- Fix the CSS paths -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Include Handsontable CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.css" rel="stylesheet">
+    <style>
+        /* Critical styles to ensure basic functionality */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            padding: 20px;
+        }
+        
+        .hidden {
+            display: none !important;
+        }
+        
+        .controls {
+            margin: 15px 0;
+        }
+        
+        .controls button {
+            margin-right: 8px;
+            padding: 6px 12px;
+        }
+        
+        .status-message {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        
+        .status-message.success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        .status-message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        #spreadsheet-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Training Schedule Spreadsheet</h1>
+        <div class="user-info">
+            <span id="user-display">User: Guest</span>
+            <button id="logout-btn">Logout</button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="title-container">
+            <label for="schedule-title">Schedule Title:</label>
+            <input type="text" id="schedule-title" placeholder="Training Plan Goals" value="Training Plan Goals">
+            <span id="auto-save-indicator" class="save-indicator">Changes saved automatically</span>
+        </div>
+        <div id="admin-controls" class="controls">
+            <button id="save-btn">Save Data</button>
+            <button id="load-btn">Load Data</button>
+            <button id="export-btn">Export to CSV</button>
+            <button id="clear-btn">Clear Data</button>
+            <button id="delete-schedule-btn" class="delete-btn">Delete Schedule</button>
+            <label for="excel-upload" class="import-btn">Import Excel</label>
+            <input type="file" id="excel-upload" accept=".xlsx, .xls" class="hidden-input">
+        </div>
+        
+        <div id="guest-controls" class="controls hidden">
+            <button id="export-btn-guest">Export to CSV</button>
+        </div>
+        
+        <div id="import-status" class="status-message"></div>
+        <div id="spreadsheet-container"></div>
+    </div>
+    <footer>
+        <p>&copy; 2025 SIX7ONE8 CODEZ | Email: SIX7ONE8@ICLOUD.COM | Cell: 303-995-9851</p>
+    </footer>
+    
+    <!-- Include Handsontable JS -->
+    <script src="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.js"></script>
+    <!-- Include SheetJS for Excel import -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+    <!-- Fix JS path -->
+    <script src="js/schedule.js"></script>
+</body>
+</html>

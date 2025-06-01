@@ -1,0 +1,53 @@
+{
+  "scheduleTitle": "Training Plan Goals",
+  "spreadsheetData": [
+    [
+      "TransDev Schedule Import Template",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Employee",
+      "Assignment",
+      "Start Time",
+      "End Time",
+      "Status",
+      "Participants"
+    ],
+    [
+      "admin1",
+      "Training Session A",
+      "05/21/2025 12:30 PM",
+      "05/21/2025 01:30 PM",
+      "Scheduled",
+      "Student1, Student2"
+    ],
+    [
+      "admin2",
+      "Training Session B",
+      "05/21/2025 02:30 PM",
+      "05/21/2025 03:30 PM",
+      "Scheduled",
+      "Student3, Student4"
+    ],
+    [
+      "admin3",
+      "Evaluation Session",
+      "05/22/2025 12:30 PM",
+      "05/22/2025 01:30 PM",
+      "Scheduled",
+      "Student5"
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}
