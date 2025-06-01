@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Training Schedule Spreadsheet</title>
+    <!-- Update CSS link -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Include Handsontable CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.css" rel="stylesheet">    <!-- All styles now in styles.css -->
+    <link href="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,18 +17,20 @@
             <button id="logout-btn">Logout</button>
         </div>
     </header>
-      <div class="container">        <div class="title-container">
+    <div class="container">
+        <div class="title-container">
             <label for="schedule-title">Schedule Title:</label>
             <input type="text" id="schedule-title" placeholder="Training Plan Goals" value="Training Plan Goals">
             <span id="auto-save-indicator" class="save-indicator">Changes saved automatically</span>
         </div>
-          <div id="admin-controls" class="controls">
+        <div id="admin-controls" class="controls">
             <button id="save-btn">Save Data</button>
             <button id="load-btn">Load Data</button>
             <button id="export-btn">Export to CSV</button>
             <button id="clear-btn">Clear Data</button>
             <button id="delete-schedule-btn" class="delete-btn">Delete Schedule</button>
-            <label for="excel-upload" class="import-btn">Import Excel</label>            <input type="file" id="excel-upload" accept=".xlsx, .xls" class="hidden-input">
+            <label for="excel-upload" class="import-btn">Import Excel</label>
+            <input type="file" id="excel-upload" accept=".xlsx, .xls" class="hidden-input">
         </div>
         
         <div id="guest-controls" class="controls hidden">
@@ -36,7 +39,8 @@
         
         <div id="import-status" class="status-message"></div>
         <div id="spreadsheet-container"></div>
-    </div>      <footer>
+    </div>
+    <footer>
         <p>&copy; 2025 SIX7ONE8 CODEZ | Email: SIX7ONE8@ICLOUD.COM | Cell: 303-995-9851</p>
     </footer>
     
@@ -44,7 +48,7 @@
     <script src="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.js"></script>
     <!-- Include SheetJS for Excel import -->
     <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
-    <!-- Include our custom JS -->
+    <!-- Update JS link -->
     <script src="js/schedule.js"></script>
 </body>
 </html>
