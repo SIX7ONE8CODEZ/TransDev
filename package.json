@@ -1,25 +1,20 @@
 {
-  "name": "transdev",
+  "name": "transdev-backend",
   "version": "1.0.0",
-  "description": "A website that includes a spreadsheet functionality using Handsontable library, with a login system for admin and guest users.",
-  "main": "script.js",
+  "description": "Backend for TransDev Training Schedule",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SIX7ONE8CODEZ/TransDev.git"
+  "engines": {
+    "node": ">=18.0.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SIX7ONE8CODEZ/TransDev/issues"
-  },
-  "homepage": "https://github.com/SIX7ONE8CODEZ/TransDev#readme",
   "dependencies": {
-    "body-parser": "^2.2.0",
+    "body-parser": "^1.20.2",
     "cors": "^2.8.5",
-    "express": "^5.1.0"
-  }
+    "express": "^4.19.2"
+  },
+  "author": "Your Name",
+  "license": "ISC"
 }
