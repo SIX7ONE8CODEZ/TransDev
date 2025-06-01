@@ -90,29 +90,18 @@ app.delete('/api/schedule', (req, res) => {
     }
 });
 
-// Serve index.html for root route
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
-});
-
-// Serve schedule.html for /schedule route
-app.get('/schedule', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'schedule.html'));
-});
-
-// Handle the incorrect /public/schedule.html path
-app.get('/public/schedule.html', (req, res) => {
-    res.redirect('/schedule.html');
-});
-
-// Handle direct access to schedule.html
+// Serve static files for specific routes
 app.get('/schedule.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'schedule.html'));
 });
 
-// Redirect /schedule to schedule.html
 app.get('/schedule', (req, res) => {
     res.redirect('/schedule.html');
+});
+
+// Serve the main page for all other routes
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Start the server
