@@ -12,6 +12,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(bodyParser.json({ limit: '10mb' })); // Increased limit for large datasets
 app.use(express.static(path.join(__dirname, 'public'))); // Serve static files from 'public' folder
+app.use(express.static(__dirname)); // This tells Express to serve static files from the root directory
 
 // Ensure the data directory exists
 const dataDir = path.join(__dirname, 'data');
